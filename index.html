@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>POMODORO TIMER</title>
+
+    <!-- Bootstrap CSS CDN ok-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom stylesheet (optional) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Background Video -->
+     <video autoplay muted loop id="background-video" class="w-100">
+        <source src="/asset/video/bg2.mp4" type="video/mp4">
+    </video>
+
+    <img src="/asset/images/bg-1.png" alt="Background Image" id="background-image" class="img-fluid">
+
+    
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="container">
+            <div class="container2 text-center">
+                <h1 class="title">POMODORO TIMER</h1>
+                <hr>
+                <h3 class="subtitle">Study Efficiently</h3>
+                <p class="timer" id="timer">00:00:00</p>
+                <div class="button-wrapper">
+                    <button class="btn btn-success" id="Start">Start</button>
+                    <button class="btn btn-danger" id="Stop">Stop</button>
+                    <button class="btn btn-secondary" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Popup Timer Selection Box (Hidden initially) -->
+    <div id="timePickerModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Timer</h5>
+                    <button type="button" class="close" id="closeModal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="time" id="timePicker" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button id="confirmTime" class="btn btn-success">Confirm</button>
+                    <button id="closeModal" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap components like modals) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/script/script.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+
+</body>
+
+</html>

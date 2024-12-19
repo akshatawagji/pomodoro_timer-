@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "poppins"; */
+    font-family: sans-serif;
+
+}
+body{
+ /* background-image: linear-gradient(
+    to bottom,
+    hsl(330deg 81% 34%) 12%,
+    hsl(289, 96%, 45%) 50%,
+    hsl(197deg 100% 30%) 98%,
+    hsl(183deg 79% 36%) 100%
+  ); */
+  /* background-image: url('/asset/images/bg-1.png'); */
+  min-height: 100vh;
+  text-decoration: aqua;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+}
+/* Background Video styling */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the entire screen */
+    z-index: 1; /* Places the video behind the content */
+}
+
+#background-image {
+    position: absolute; /* Position it behind the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the viewport without distorting */
+    z-index: -1; /* Sends the image to the background, behind content */
+}
+
+
+.container{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    
+    
+}
+
+.container2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: aliceblue;
+    background: rgba(255, 255, 255, 0); /* Transparent white */
+    backdrop-filter: blur(20px); /* Blurs background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border-radius: 10px;
+    padding: 4em 3em;
+    z-index: 2;
+}
+
+.container h1{
+    font-size: 32px;
+}
+
+.title{
+    font-size: 3em;
+}
+hr{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    border-radius: 1em;
+    border: none;
+
+}
+.timer{
+    font-size: 5em;
+    font-weight: 7em;
+
+}
+.button-wrapper{
+    display: flex;
+    gap: 1em;
+}
+/* button{
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+
+} */
+
+.btn{
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.btn-green{
+    background-color: #F9D2D3;
+}
+.btn-red{
+    background-color: rgb(209, 4, 4);
+}
+
+/* The modal (popup) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(255, 255, 255, 0); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurs background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support   */
+    overflow: auto; /* Enable scrolling if needed */
+    z-index: 2;
+}
+
+/* Modal Content */
+.modal-content {
+    /* background-color: #fff; */
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px; /* Border radius for rounded corners */
+    width: 320px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.328); /* Transparent white */
+    backdrop-filter: blur(20px); /* Blurs background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support   */
+}
+
+.modal-title {
+
+    color: #fff;
+}
+
+/* Styling for the time picker */
+#timePicker {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Centering modal content and buttons */
+#confirmTime {
+    width: 45%;
+    margin: 5px;
+}
+
+#closeModal999 {
+    width: 45%;
+    margin: 5px;
+}
